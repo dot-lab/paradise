@@ -1,4 +1,4 @@
-h1, h2 {
+h1, h2, h3 {
   margin: 0; }
 
 h1 {
@@ -18,9 +18,8 @@ body {
     background: yellow;
     margin-top: 1em; }
     #wrapper header #header-inner {
-      padding: 1em 1em 0; }
-      #wrapper header #header-inner h1 {
-        text-align: right; }
+      padding: 1em 1em 0;
+      text-align: right; }
   #wrapper #sidebar {
     background: blue;
     float: right;
