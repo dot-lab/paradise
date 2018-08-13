@@ -1,33 +1,42 @@
 h1, h2 {
   margin: 0; }
 
+h1 {
+  font-size: 2.0em; }
+
+h2 {
+  font-size: 1.5em; }
+
 body {
   margin: 0; }
 
-#container {
+#wrapper {
   width: 95%;
   margin: 0 auto;
   background: gray; }
-  #container #header {
-    background: orange; }
-  #container #sidebar {
+  #wrapper header {
+    background: yellow;
+    margin-top: 1em; }
+    #wrapper header #header-inner {
+      padding: 1em 1em 0; }
+      #wrapper header #header-inner h1 {
+        text-align: right; }
+  #wrapper #sidebar {
     background: blue;
     float: right;
     width: 20%;
     padding: 0.5%;
-    margin-top: 1%;
-    margin-right: 1%; }
-    #container #sidebar ul {
+    margin: 1% 1% 1% 0; }
+    #wrapper #sidebar ul {
       padding-left: 1.2em; }
-  #container #main {
+  #wrapper #main {
     background: green;
     float: right;
     width: 75%;
     margin: 1%;
     padding: 0.5%; }
-    #container #main .post .post-cat {
-      margin: 0;
-      font-size: 0.9em; }
-  #container #footer {
+  #wrapper footer #footer {
     background: red;
     clear: both; }
+    #wrapper footer #footer p {
+      text-align: center; }
