@@ -1,2 +1,7 @@
+@mixin sp {
+	@media screen and (max-width: 430px){
+		@content;
+	}
+}
 @import 'tags';
 @import 'main';

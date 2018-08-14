@@ -11,12 +11,15 @@ body {
   margin: 0; }
 
 #wrapper {
-  width: 95%;
+  width: 85%;
   margin: 0 auto;
   background: gray; }
+  @media screen and (max-width: 430px) {
+    #wrapper {
+      width: 100%; } }
   #wrapper header {
-    background: yellow;
-    margin-top: 1em; }
+    margin: 1em 0;
+    background: yellow; }
     #wrapper header #header-inner {
       padding: 1em 1em 0;
       text-align: right; }
@@ -25,15 +28,25 @@ body {
     float: right;
     width: 20%;
     padding: 0.5%;
-    margin: 1% 1% 1% 0; }
+    margin: 1% 0; }
     #wrapper #sidebar ul {
       padding-left: 1.2em; }
+    @media screen and (max-width: 430px) {
+      #wrapper #sidebar {
+        float: none;
+        width: 100%;
+        margin: 0; } }
   #wrapper #main {
     background: green;
     float: right;
     width: 75%;
     margin: 1%;
     padding: 0.5%; }
+    @media screen and (max-width: 430px) {
+      #wrapper #main {
+        float: none;
+        width: 100%;
+        margin: 0; } }
   #wrapper footer #footer {
     background: red;
     clear: both; }
