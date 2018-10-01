@@ -2,25 +2,19 @@
 		<div id="main">
 			<article>
 				<h1>Works</h1>
-				<h2>Illust</h2>
-				<h3>Tag</h3>
-				<ul>
-					<li>いろいろ</li>
-					<li>いろいろ</li>
-					<li>いろいろ</li>
-				</ul>
-				<h3>Tag</h3>
-				<ul>
-					<li>いろいろ</li>
-					<li>いろいろ</li>
-					<li>いろいろ</li>
-				</ul>
 				<h2>Coloring</h2>
-				<h3>Tag</h3>
+				<?php 
+					$args = array(
+						'category_name' => 'coloring'
+					);
+					$posts = get_posts($args);
+				?>
 				<ul>
-					<li>いろいろ</li>
-					<li>いろいろ</li>
-					<li>いろいろ</li>
+					<?php foreach($posts as $post) : setup_postdata($post);?>
+						<li>
+							<?php echo the_title();?>
+						</li>
+					<?php endforeach; wp_reset_postdata(); ?>
 				</ul>
 			</article>
 		</div>
