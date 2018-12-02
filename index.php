@@ -12,7 +12,9 @@
             <?php while( $query->have_posts() ) : $query->the_post(); ?>
               <div class="post">
                 <?php $image = get_field('coloring_image'); ?>
-                <img src="<?php echo $image['sizes']['thumbnail'];?>" alt="<?php get_field('coloring_title');?>">
+                <a href="<?php echo $image['url'];?>" title="<?php the_field('coloring_title');?>" class="swipebox">
+                  <img src="<?php echo $image['sizes']['thumbnail'];?>" alt="<?php the_field('coloring_title');?>">
+                </a>
               </div>
             <?php endwhile; wp_reset_postdata(); ?>
             </div>

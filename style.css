@@ -61,6 +61,11 @@ body {
         width: 100%;
         margin: 0;
         border-radius: 0; } }
+    #wrapper #main .coloring .post {
+      float: left;
+      padding: 5px; }
+      #wrapper #main .coloring .post img {
+        border: 1px solid #ccc; }
   #wrapper footer #footer {
     background: #ff008b;
     clear: both; }
