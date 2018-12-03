@@ -2,3 +2,4 @@
 * text=auto
 lib/* linguist-vendored
 scss/* linguist-vendored
+./style.css linguist-vendored
